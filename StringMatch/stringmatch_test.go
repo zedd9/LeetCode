@@ -16,6 +16,7 @@ func TestCase1(t *testing.T) {
 	for _, str := range result {
 		assert.Contains(expect, str)
 	}
+	assert.Equal(len(result), 2)
 }
 
 func TestCase2(t *testing.T) {
@@ -28,4 +29,5 @@ func TestCase2(t *testing.T) {
 	for _, str := range result {
 		assert.Contains(expect, str)
 	}
+	assert.Equal(len(result), 2)
 }
